@@ -169,16 +169,10 @@ public abstract class Enchantment {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj == null) {
-            return false;
-        }
-        if (!(obj instanceof Enchantment)) {
-            return false;
-        }
+        if (obj == null) return false;
+        if (!(obj instanceof Enchantment)) return false;
         final Enchantment other = (Enchantment) obj;
-        if (this.id != other.id) {
-            return false;
-        }
+        if (this.id != other.id) return false;
         return true;
     }
 
